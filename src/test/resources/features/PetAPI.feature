@@ -1,6 +1,6 @@
 Feature: Verify PET API Module
 
-  @debug11
+  @petstoretests
   Scenario Outline: Run the Addpet
     Given Prepare update Add Pet request for below data
       | id           | <id>           |
@@ -19,7 +19,7 @@ Feature: Verify PET API Module
       | 0  | Bella | dsadf    | confirm | 5          | kumar        |
 
 
-  @debug11
+  @petstoretests
   Scenario Outline: Upload image to pet
     Given Prepare update Add Pet request for below data
       | id           | <id>           |
@@ -40,7 +40,7 @@ Feature: Verify PET API Module
       | 0  | Luna | dsadf    | pending | 5          | kumar        |
 
 
-  @debug11
+  @petstoretests
   Scenario Outline: Update an Exisiting pet
     Given Prepare update Add Pet request for below data
       | id           | <id>           |
@@ -65,7 +65,7 @@ Feature: Verify PET API Module
       | 0  | Milo | dsadf    | pending | 5          | kumar        | Lucy         | sold           |
 
 
-  @debug11
+  @petstoretests
   Scenario: Find the pet by status
     When Send get "findbystatus" request with Parameter name as "status" and Parameter Value as "pending"
     And We Validate the response code and response in find by pet response
@@ -75,7 +75,7 @@ Feature: Verify PET API Module
     And We Validate the response code and response in find by pet response
 
 
-  @debug11
+  @petstoretests
   Scenario: Find the pet by id
     Given Prepare update Add Pet request for below data
       | id           | <id>           |
@@ -95,7 +95,7 @@ Feature: Verify PET API Module
       | id | name  | photourl | status  | categoryid | categoryname |
       | 0  | Bella | dsadf    | confirm | 5          | kumar        |
 
-  @debug11
+  @petstoretests
   Scenario: Delete the pet by id
     Given Prepare update Add Pet request for below data
       | id           | <id>           |

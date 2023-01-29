@@ -1,6 +1,6 @@
 Feature: Verify User API Module
 
-  @debug11
+  @petstoretests
   Scenario: Run the Create with List for User
     Given Prepare update Add User request for below data
       | id | username  | firstName | lastName | email                 | password | phone      | userStatus |
@@ -10,7 +10,7 @@ Feature: Verify User API Module
     Then We Validate the response code and response in createUserWithList response
 
 
-  @debug11
+  @petstoretests
   Scenario Outline: Run the Create a new user
     Given Prepare update Create user request for below data
       | id         | <id>         |
@@ -28,7 +28,7 @@ Feature: Verify User API Module
       | 0  | Leaseplan | Selenium  | BDD      | seleniumbdd@gmail.com | abc@123  | 0767676776 | 1          |
 
 
-  @debug11
+  @petstoretests
   Scenario: Run the Create with Array for User
     Given Prepare update Add User request for below data
       | id | username  | firstName | lastName | email                 | password | phone      | userStatus |
@@ -37,7 +37,7 @@ Feature: Verify User API Module
     When Send post "createWithArray" request
     Then We Validate the response code and response in createUserWithList response
 
-  @debug11
+  @petstoretests
   Scenario: Run the User API through Find by Username
     When Send get "findbyusername" request with username "Testuser"
     Then We Validate the response code and response in createUserWithList response
@@ -45,7 +45,7 @@ Feature: Verify User API Module
     Then We Validate the response code and response Where user name Found response
 
 
-  @debug11
+  @petstoretests
   Scenario: Run the Update the User API for User
     Given Prepare update Create user request for below data
       | id         | <id>         |
@@ -64,7 +64,7 @@ Feature: Verify User API Module
       | id | username  | firstName | lastName | email                 | password | phone      | userStatus |
       | 0  | Leaseplan | Selenium  | BDD      | seleniumbdd@gmail.com | abc@123  | 0767676776 | 1          |
 
-  @debug11
+  @petstoretests
   Scenario: Run the Login with Username and Password
     Given Prepare update Create user request for below data
       | id         | <id>         |
@@ -83,7 +83,7 @@ Feature: Verify User API Module
       | id | username  | firstName | lastName | email                 | password | phone      | userStatus |
       | 0  | Leaseplan | Selenium  | BDD      | seleniumbdd@gmail.com | abc@123  | 0767676776 | 1          |
 
-  @debug11
+  @petstoretests
   Scenario: Run the Login with Username and Password and Logout
     Given Prepare update Create user request for below data
       | id         | <id>         |
@@ -105,7 +105,7 @@ Feature: Verify User API Module
       | 0  | Leaseplan | Selenium  | BDD      | seleniumbdd@gmail.com | abc@123  | 0767676776 | 1          |
 
 
-  @debug11
+  @petstoretests
   Scenario: Run the Login with Username and Password and Logout
     Given Prepare update Create user request for below data
       | id         | <id>         |

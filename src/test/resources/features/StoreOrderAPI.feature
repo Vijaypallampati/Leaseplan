@@ -1,6 +1,6 @@
 Feature: Verify Store Order API Module
 
-  @debug11
+  @petstoretests
   Scenario Outline: Run the Place Order for pet
     Given Prepare update Add Pet request for below data
       | id           | <id>           |
@@ -25,7 +25,7 @@ Feature: Verify Store Order API Module
       | 0  | Bella | Doggie   | confirm | 5          | kumar        | 3        | placed      |
 
 
-  @debug11
+  @petstoretests
   Scenario Outline: Run the find by Order id for pet
     Given Prepare update Add Pet request for below data
       | id           | <id>           |
@@ -52,7 +52,7 @@ Feature: Verify Store Order API Module
       | 0  | Bella | Doggie   | confirm | 5          | kumar        | 3        | delivered      |
 
 
-  @debug11
+  @petstoretests
   Scenario Outline: Run the Delete Order id for pet
     Given Prepare update Add Pet request for below data
       | id           | <id>           |
@@ -81,7 +81,7 @@ Feature: Verify Store Order API Module
       | 0  | Bella | Doggie   | confirm | 5          | kumar        | 3        | approved      |
 
 
-  @debug111
+  @petstoretests
   Scenario: Run the Inventory for pet
     When Send get "storeinventory" request
     Then We Validate the response code and response for Inventory response
