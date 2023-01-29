@@ -1,0 +1,7 @@
+app:
+  baseUri: https://petstore.swagger.io
+  username: admin
+  password: password123
+  appUrl: https://www.saucedemo.com/
+  guiUsername: standard_user
+  guiPassword: secret_sauce

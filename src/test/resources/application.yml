@@ -1,0 +1,32 @@
+#Default active Profile
+spring:
+  profiles:
+    active: dev
+#=================================================================Static environment variables
+endpoint:
+  token: /auth
+  bookingId: /booking
+  ping: /ping
+  Addpet: /v2/pet
+  uploadimagetopet: v2/pet
+  findbystatus: v2/pet/findByStatus
+  findpetbyid: /v2/pet
+  deletepetbyid: /v2/pet
+  placeorder: v2/store/order
+  findbyorder: v2/store/order
+  deleteorder: v2/store/order
+  storeinventory: v2/store/inventory
+  createUserWithList: v2/user/createWithList
+  createuser: /v2/user
+  createWithArray: v2/user/createWithArray
+  findbyusername: v2/user
+  updateusername: v2/user
+  logindetails: v2/user/login
+  logout: v2/user/logout
+  deleteruser: v2/user
+
+gui:
+  explicitWait: 30
+  implicitWait: 10
+  pageLoadTimeout: 30
+  scriptTimeout: 30
